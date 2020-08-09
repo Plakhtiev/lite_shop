@@ -10,7 +10,6 @@ function addToCart() {
   } else {
     cart[goodsId] = 1;
   }
-  console.log(cart);
   ajaxGetGoodsInfo();
 }
 
@@ -29,7 +28,6 @@ function ajaxGetGoodsInfo() {
       return response.text();
     })
     .then(function (body) {
-      console.log(body);
       showCart(JSON.parse(body));
     })
 };
