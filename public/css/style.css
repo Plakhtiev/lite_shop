@@ -2,18 +2,6 @@
   font-family: sans-serif;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
 .wrap {
   background: #fff;
   display: -webkit-flex;
@@ -48,13 +36,13 @@ li {
   padding: 0;
 }
 
-/* ------------cart ------------------- */
+/* ------------card ------------------- */
 
-.cart {
+.card {
   border: 1px solid #dedede;
 }
 
-.cart-images {
+.card-images {
   display: block;
   margin: 20px auto;
   max-width: 90%;
@@ -67,7 +55,7 @@ li {
   width: 300px;
   min-height: 100vh;
   position: fixed;
-  left: -300px;
+  /* left: -300px; */
   top: 0;
   z-index: 999999;
   padding: 10px;
@@ -87,7 +75,10 @@ ul.category-list {
   list-style-type: disc;
 }
 
-.site-nav a,
 ul.category-list a {
+  color: #424242;
+}
+
+.site-nav a {
   color: #424242;
 }
